@@ -214,7 +214,7 @@ export default function Footer() {
 
             {/* Copyright */}
             <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-white/40 text-sm">
-              <p>© 2025 The Chai House. All rights reserved.</p>
+              <p>© 2026 The Chai House. All rights reserved.</p>
               <div className="flex gap-6">
                 <Link to="/privacy" className="hover:text-saffron transition-colors">
                   Privacy Policy

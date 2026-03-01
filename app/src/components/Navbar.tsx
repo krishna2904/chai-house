@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, Coffee, ShoppingBag, X } from 'lucide-react';
+import { Menu, ShoppingBag, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/context/CartContext';
 
@@ -40,19 +40,12 @@ export default function Navbar({ onMenuClick, showCart = false }: NavbarProps) {
       <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-20">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div
-              className={`p-2 rounded-full transition-all duration-300 ${
-                isScrolled || !isHome
-                  ? 'bg-saffron'
-                  : 'bg-white/20 backdrop-blur-sm'
-              }`}
-            >
-              <Coffee className="w-5 h-5 text-white" />
-            </div>
-            <span className={`font-serif text-xl font-semibold ${textColor}`}>
-              The Chai House
-            </span>
+          <Link to="/" className="flex items-center group">
+            <img
+              src="/images/logo.jpg"
+              alt="The Chai House"
+              className="h-10 lg:h-12 w-auto object-contain rounded-lg"
+            />
           </Link>
 
           {/* Desktop Navigation */}
